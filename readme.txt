@@ -4,7 +4,7 @@ Donate link: http://remysharp.com/2007/07/26/lastfm-recent-album-artwork-plugin/
 Tags: sidebar, artwork, images, lastfm
 Requires at least: 2.0.2
 Tested up to: 2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Displays the album cover artwork for recently listened to songs via Last.fm
 

@@ -3,7 +3,7 @@
 Plugin Name: Last.fm Recent Albums and Artwork
 Plugin URI: http://remysharp.com/2007/07/26/lastfm-recent-album-artwork-plugin/
 Description: Reads the recent songs that you've listened to from Last.fm and pulls album artwork
-Version: 1.0.1
+Version: 1.0.2
 License: GPL
 Author: Remy Sharp
 Author URI: http://remysharp.com
@@ -34,7 +34,7 @@ function get_lastFM_album_artwork() {
     if (!isset($args[2])) $size = get_option('lastfm_size'); else $size = $args[4];
     if (!isset($args[3])) $username = get_option('lastfm_username'); else $username = $args[5];
     
-    if (!isset($args[4])) $html_format = get_option('lastfm_html_format'); else $html_format = $default_html_format;
+    if (!isset($args[4])) $html_format = stripslashes(get_option('lastfm_html_format')); else $html_format = $default_html_format;
     
     $album_path = get_option('lastfm_album_path');
     $url_prefix = get_option('lastfm_url_prefix');
